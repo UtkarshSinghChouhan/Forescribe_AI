@@ -11,7 +11,7 @@ import SubHeading from "./SubHeading.jsx";
 const MainContent = () => {
   return (
     <>
-      <div className="flex flex-col gap-12 main_content overflow-y-scroll pl-12 pr-12 py-8">
+      <div className="flex flex-col gap-12 main_content pl-12 pr-12 py-8 ">
         <div className="header flex flex-col">
           <h1 className="font-semibold text-[#19154E] text-3xl">
             Integrations

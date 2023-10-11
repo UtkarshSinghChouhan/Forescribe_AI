@@ -57,7 +57,7 @@ export const mc_integration = [
     symbol: google,
     icon: [integration_group],
     title: "Google Workspace",
-    bgcolor: "bg-[#fff]",
+    bgcolor: "fff",
     btn: true,
 
     detail:
@@ -68,7 +68,7 @@ export const mc_integration = [
     symbol: office,
     icon: [integration_group],
     title: "Office 365",
-    bgcolor: "",
+    bgcolor: "f04e1f",
     btn: true,
     detail:
       "Setup Office 365 if your organization depends on it as an Identity provider",
@@ -81,7 +81,7 @@ export const mc_accounting = [
     symbol: xero,
     icon: [accounting_group1, accounting_group2],
     title: "Xero",
-    bgcolor: "bg-[#13B5EA]",
+    bgcolor: "13B5EA",
     btn: true,
     detail:
       "Gather actionable information for every known Application that persists in your books",
@@ -134,7 +134,7 @@ export const mc_engagement = [
     symbol: jira,
     icon: [],
     title: "Jira",
-    bgcolor: "",
+    bgcolor: "598fde",
     btn: false,
     detail:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",

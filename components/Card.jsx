@@ -8,13 +8,16 @@ const Card = ({ symbol, icon, title, detail, bgcolor, btn }) => {
   return (
     <>
       <div
-        className={`flex justify-between items-center border-2 border-[#EFEFEF] rounded-3xl py-6 px-5 card_background w-full h-full `}
+        className={` ${
+          icon.length === 0 ? "opacity-[0.65]" : "opacity-100"
+        } flex justify-between items-center border-2 border-[#EFEFEF] rounded-3xl py-6 px-5 card_background w-full h-full `}
       >
         <div className="flex gap-2 items-center">
           <div
-            className={`flex justify-center items-center w-[52px] h-[52px] p-2 ${bgcolor} `}
+            style={{ background: `#${bgcolor}` }}
+            className={`flex justify-center items-center w-[52px] h-[52px] p-2 rounded-[10px]`}
           >
-            <Image src={symbol} width={52} height={52} alt="symbol" />
+            <Image src={symbol} width={26} height={35} alt="symbol" />
           </div>
           <div className="info flex flex-col">
             <div className="title flex gap-2">
@@ -43,12 +46,15 @@ const Card = ({ symbol, icon, title, detail, bgcolor, btn }) => {
           <Button />
         ) : (
           <>
-            <div className="relative bg-[#FF8D15] cursor-pointer py-1 px-5 opacity-100 rounded-tl-[5px] rounded-tr-[5px] rounded-br-0 rounded-bl-[5px] mr-[-33px]">
+            <div
+              style={{ backgroundColor: "rgba(255, 141, 21, 1)" }}
+              className="relative z-10 bg-[#FF8D15] cursor-pointer py-1 px-5 rounded-tl-[5px] rounded-tr-[5px] rounded-br-0 rounded-bl-[5px] mr-[-37px]"
+            >
               <div className="absolute top-[-15px] left-[-11px] z-40">
                 <Image src={highlight} width={21} height={21} alt="highlight" />
               </div>
               <p className="text-white cursor-pointer text-sm">Comming Soon</p>
-              <div className="absolute right-0 bottom-0">
+              <div className="absolute z-[-1] right-0 bottom-[-12px]">
                 <Image src={triangle} width={16} height={13} alt="highlight" />
               </div>
             </div>
