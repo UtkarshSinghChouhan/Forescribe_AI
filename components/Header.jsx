@@ -4,6 +4,7 @@ import invite_member from "../public/header_assets/invite_member.svg";
 import notification from "../public/header_assets/notification.svg";
 import profile_image from "../public/header_assets/profile_image.svg";
 import downward_arrow from "../public/sidebar_assests/downward_arrow.svg";
+
 import SearchBar from "./SearchBar";
 
 const Header = () => {

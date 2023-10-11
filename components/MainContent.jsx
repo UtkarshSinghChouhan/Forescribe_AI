@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import {
   mc_integration,
   mc_accounting,

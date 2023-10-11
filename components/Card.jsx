@@ -53,7 +53,9 @@ const Card = ({ symbol, icon, title, detail, bgcolor, btn }) => {
               <div className="absolute top-[-15px] left-[-11px] z-40">
                 <Image src={highlight} width={21} height={21} alt="highlight" />
               </div>
-              <p className="text-white cursor-pointer text-sm">Comming Soon</p>
+              <p className="text-white cursor-pointer text-[11px]">
+                Comming Soon
+              </p>
               <div className="absolute z-[-1] right-0 bottom-[-12px]">
                 <Image src={triangle} width={16} height={13} alt="highlight" />
               </div>

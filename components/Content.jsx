@@ -3,7 +3,7 @@ import Header from "./Header";
 import MainContent from "./MainContent";
 import message from "../public/message.svg";
 
-const Content = () => {
+const Content = ({ toggle, setToggle }) => {
   return (
     <div className="w-full h-screen overflow-y-scroll relative">
       <Header />

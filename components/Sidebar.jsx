@@ -1,4 +1,5 @@
 import logo from "../public/sidebar_assests/logo.svg";
+
 import Image from "next/image";
 
 import MenuButton from "./MenuButton";
@@ -7,12 +8,12 @@ import insights from "../public/sidebar_assests/insights.svg";
 import person from "../public/sidebar_assests/person-workspace-icon-1.svg";
 import downward_arrow from "../public/sidebar_assests/downward_arrow.svg";
 
-// 220px
-
 const Sidebar = () => {
   return (
     <>
-      <div className="w-[17%] h-full sticky top-0 bottom-0 left-0 flex flex-col border-r-2  bg-white">
+      <div
+        className={` w-[17%] h-full sticky top-0 bottom-0 left-0 flex flex-col border-r-2  bg-white`}
+      >
         <div className="logo w-full py-5 flex justify-center items-center border-b-2 box-border overflow-hidden ">
           <Image className="cursor-pointer" src={logo} width={110} alt="logo" />
         </div>
