@@ -9,27 +9,35 @@ import SearchBar from "./SearchBar";
 const Header = () => {
   return (
     <>
-      <div className="header flex  justify-between px-7 py-[13.5px] border-b-2 sticky top-0 z-10 bg-white">
+      <div className="header flex  justify-between items-center px-7 py-[11.5px] border-b-2 sticky top-0 z-10 bg-white">
         <div className="left flex gap-8 items-center">
-          <div>
-            <Image src={header_left_arrow} width={24} height={24} />
+          <div className="cursor-pointer">
+            <Image src={header_left_arrow} width={20} alt="left_arrow" />
           </div>
 
           <SearchBar />
         </div>
         <div className="right flex gap-3 items-center justify-evenly h-full">
-          <div className="flex gap-[10px] bg-[#F6F0FF] px-5 py-2 rounded-md">
-            <Image src={invite_member} width={22} height={16} />
-            <p className="font-normal text-base text-[#8B3DFF]">
-              Invite members
-            </p>
+          <div className="flex gap-[10px] bg-[#F6F0FF] px-5 py-2 rounded-md cursor-pointer">
+            <Image src={invite_member} width={19} alt="invite_member" />
+            <p className="font-normal text-xs text-[#8B3DFF]">Invite members</p>
           </div>
-          <div>
-            <Image src={notification} width={18} height={25} />
+          <div className="cursor-pointer">
+            <Image src={notification} width={16} alt="notification" />
           </div>
           <div className="flex gap-2 items-center">
-            <Image src={profile_image} width={36} height={36} />
-            <Image src={downward_arrow} width={10} height={5} />
+            <Image
+              className="cursor-pointer"
+              src={profile_image}
+              width={28}
+              alt="profile_image"
+            />
+            <Image
+              className="cursor-pointer"
+              src={downward_arrow}
+              width={8}
+              alt="down_ward"
+            />
           </div>
         </div>
       </div>

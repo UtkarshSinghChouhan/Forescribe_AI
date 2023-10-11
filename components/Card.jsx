@@ -10,33 +10,33 @@ const Card = ({ symbol, icon, title, detail, bgcolor, btn }) => {
       <div
         className={` ${
           icon.length === 0 ? "opacity-[0.65]" : "opacity-100"
-        } flex justify-between items-center border-2 border-[#EFEFEF] rounded-3xl py-6 px-5 card_background w-full h-full `}
+        } flex justify-between items-center border-2 border-[#EFEFEF] rounded-2xl py-4 px-4 card_background w-full h-full `}
       >
         <div className="flex gap-2 items-center">
           <div
             style={{ background: `#${bgcolor}` }}
-            className={`flex justify-center items-center w-[52px] h-[52px] p-2 rounded-[10px]`}
+            className={`flex justify-center items-center w-[40px] h-[40px] p-2 rounded-[10px]`}
           >
-            <Image src={symbol} width={26} height={35} alt="symbol" />
+            <Image src={symbol} width={22} alt="symbol" />
           </div>
           <div className="info flex flex-col">
             <div className="title flex gap-2">
-              <h1 className="text-lg font-medium text-[#19154E]">{title}</h1>
+              <h1 className="text-base font-medium text-[#19154E]">{title}</h1>
 
               {icon.length != 0 && (
-                <div className="flex justify-center items-center gap-2 bg-[#9867EA]/[0.2] rounded-lg w-[61px] h-[26px]">
+                <div className="flex justify-center items-center gap-2 bg-[#9867EA]/[0.2] rounded-lg w-[46px] h-[21px] cursor-pointer">
                   {icon.length > 1 ? (
                     <>
-                      <Image src={icon[0]} width={15} height={15} />
-                      <Image src={icon[1]} width={15} height={15} />
+                      <Image src={icon[0]} width={11} />
+                      <Image src={icon[1]} width={11} />
                     </>
                   ) : (
-                    <Image src={icon[0]} width={47} height={19} />
+                    <Image src={icon[0]} width={34} alt="icon" />
                   )}
                 </div>
               )}
             </div>
-            <div className="content text-[#6B778C] text-base font-normal">
+            <div className="content text-[#6B778C] text-xs font-normal">
               {detail}
             </div>
           </div>

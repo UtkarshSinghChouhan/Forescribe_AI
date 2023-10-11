@@ -5,7 +5,7 @@ import message from "../public/message.svg";
 
 const Content = () => {
   return (
-    <div className="w-5/6 h-screen overflow-y-scroll relative">
+    <div className="w-full h-screen overflow-y-scroll relative">
       <Header />
       <MainContent />
       <div className="flex justify-center items-center w-[64px] h-[64px] fixed right-3 bottom-0 z-30 cursor-pointer ">

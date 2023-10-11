@@ -13,8 +13,8 @@ const MenuButton = ({ icon, name }) => {
             name === "Integrations" ? "" : "hidden"
           } absolute w-1 h-[calc(100%-20px)] bg-[#8B3DFF] rounded-[40px] left-0`}
         ></span>
-        <Image src={icon} width={22} height={22} />
-        <p className="font-normal text-base">{name}</p>
+        <Image src={icon} width={15} alt="menu_icon" />
+        <p className="font-normal text-xs">{name}</p>
       </div>
     </>
   );

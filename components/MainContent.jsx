@@ -11,12 +11,12 @@ import SubHeading from "./SubHeading.jsx";
 const MainContent = () => {
   return (
     <>
-      <div className="flex flex-col gap-12 main_content pl-12 pr-12 py-8 ">
-        <div className="header flex flex-col">
-          <h1 className="font-semibold text-[#19154E] text-3xl">
+      <div className="flex flex-col  gap-6 main_content px-44 py-5 ">
+        <div className=" header flex flex-col">
+          <h1 className="font-semibold text-[#19154E] text-2xl">
             Integrations
           </h1>
-          <p className="text-base font-normal text-[#3F4C5A]">
+          <p className="text-sm font-normal text-[#3F4C5A]">
             Missing your favorite Integration? You can request one{" "}
             <span className="text-[#8B3DFF] cursor-pointer">here</span>.
           </p>
@@ -25,7 +25,7 @@ const MainContent = () => {
         <div className="identity flex flex-col gap-5 w-full">
           <SubHeading sub_heading="Identity and Single Sign On" />
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4">
             {mc_integration.map((obj) => {
               const { id, symbol, icon, title, detail, bgcolor, btn } = obj;
 
@@ -44,7 +44,7 @@ const MainContent = () => {
           </div>
         </div>
 
-        <div className="accounting flex flex-col gap-5">
+        <div className="accounting flex flex-col gap-4">
           <SubHeading sub_heading="Accounting" />
           <div className="flex flex-col gap-5">
             {mc_accounting.map((obj) => {
@@ -64,7 +64,7 @@ const MainContent = () => {
             })}
           </div>
         </div>
-        <div className="engagement flex flex-col gap-5">
+        <div className="engagement flex flex-col gap-4">
           <SubHeading sub_heading="Engagement" />
           <div className="flex flex-col gap-5 ">
             {mc_engagement.map((obj) => {
