@@ -8,8 +8,8 @@ const Content = () => {
     <div className="w-full h-screen overflow-y-scroll relative">
       <Header />
       <MainContent />
-      <div className="flex justify-center items-center w-[64px] h-[64px] fixed right-3 bottom-0 z-30 cursor-pointer ">
-        <Image src={message} width={64} height={64} alt="message" />
+      <div className="flex justify-center items-center w-[80px] h-[80px] fixed right-3 bottom-0 z-30 cursor-pointer ">
+        <Image src={message} width={80} alt="message" />
       </div>
     </div>
   );

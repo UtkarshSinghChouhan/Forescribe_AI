@@ -13,10 +13,10 @@ const MainContent = () => {
     <>
       <div className="flex flex-col  gap-6 main_content px-44 py-5 ">
         <div className=" header flex flex-col">
-          <h1 className="font-semibold text-[#19154E] text-2xl">
+          <h1 className="font-semibold text-[#19154E] text-2xl cursor-default">
             Integrations
           </h1>
-          <p className="text-sm font-normal text-[#3F4C5A]">
+          <p className="text-sm font-normal text-[#3F4C5A] cursor-default">
             Missing your favorite Integration? You can request one{" "}
             <span className="text-[#8B3DFF] cursor-pointer">here</span>.
           </p>

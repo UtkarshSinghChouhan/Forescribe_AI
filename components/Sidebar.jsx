@@ -21,7 +21,7 @@ const Sidebar = () => {
           <div className="navigation w-full px-3">
             <MenuButton icon={insights} name={"Insights"} />
             <div className="menu pt-4">
-              <p className="text-xs text-light-gray font-normal uppercase pl-5 pb-2">
+              <p className="cursor-default text-xs text-light-gray font-normal uppercase pl-5 pb-2">
                 Menu
               </p>
               {menu_info.map((obj) => {
@@ -30,7 +30,7 @@ const Sidebar = () => {
               })}
             </div>
             <div className="settings pt-4">
-              <p className="text-sm text-light-gray font-normal uppercase pl-5 pb-2">
+              <p className="cursor-default text-sm text-light-gray font-normal uppercase pl-5 pb-2">
                 Settings
               </p>
               {settings_info.map((obj) => {
